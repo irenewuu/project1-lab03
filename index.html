@@ -54,7 +54,11 @@
 </header>
 
 <!-- Header Classes: menuBar, menubtn, heroimg -->
-
+<!-- Sect 1 Classes: row, colCentered 
+      Sect 2 Classes: row, imgBox, imgBotText
+      Sect 3 Classes: flex, row, imgBox, imgBotText
+      Sect 4 Classes: row, column-->
+<!-- Footer Classes: row, column, flex-->
 <body>
   <h1>Hey guys! This is the <span>Metrolics</span> theme.<br>
       It sports a responsive layout with a mobile layout.</h1>
@@ -91,11 +95,9 @@
           scratch, including marketing materials</p>
     </div>
   </section>
-
   
-  <!-- Sect 1 Classes: row, colCentered 
-       Sect 2 Classes: imgBox, imgBotText
-       Sect 3 Classes: flex, row, imgBox, imgBotText-->
+
+
   <h2>What's Up Lately?</h2>
   <p>Read up on our latest work</p>
   <section class="row"> <!--What's Up Lately? section-->
@@ -143,7 +145,7 @@
 
   <h2>Thingsofabove</h2>
   <p>Misc stuff we could not put anyplace else</p>
-  <div class="row">
+  <div class="row"> <!--Thingsofabove section-->
     <section class="column">
       <details>
         <summary>Sample Accordion Menu</summary>
@@ -198,6 +200,81 @@
      </section>
   </div>
   
+  <div class="row">
+    <input type="image" src="img/placeholder.svg" alt="company 1">
+    <input type="image" src="img/placeholder.svg" alt="company 2">
+    <input type="image" src="img/placeholder.svg" alt="company 3">
+    <input type="image" src="img/placeholder.svg" alt="company 4">
+    <input type="image" src="img/placeholder.svg" alt="company 5">
+  </div>
+
+  <footer>
+    <div class="row">
+      <img src="img/placeholder.svg" alt="Peewee Herman's Photo">
+      <div class="column">
+        <p><b>Peewee Herman</b></p>
+        <p><i>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. 
+          He is also pretty good with a sketch-book. Before starting the company Peewee worked as a designer and studio manager for a design house who 
+          boasted a number of big name clients.</i></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h3>About Us</h3>
+        <p>Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. 
+          Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahahaha 
+          gelatooo belloo! Bananaaaa aaaaaah butt</p>
+        <div class="row">
+          <input type="image" src="img/placeholder.svg" alt="facebook">
+          <input type="image" src="img/placeholder.svg" alt="google">
+          <input type="image" src="img/placeholder.svg" alt="twitter">
+          <input type="image" src="img/placeholder.svg" alt="instagram">
+          <input type="image" src="img/placeholder.svg" alt="linkedin">
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Flickr Photos</h3>
+        <div class="flex row">
+          <img src="img/placeholder.svg" alt="minion image 1">
+          <img src="img/placeholder.svg" alt="minion image 2">
+          <img src="img/placeholder.svg" alt="minion image 3">
+          <img src="img/placeholder.svg" alt="minion image 4">
+          <img src="img/placeholder.svg" alt="minion image 5">
+          <img src="img/placeholder.svg" alt="minion image 6">
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Recent Tweets</h3>
+        <div class="row">
+          <img src="img/placeholder.svg" alt="twitter">
+          <p><span class="blue">@Minions</span> - ipsum potatoooo potatoooo uuuhhh. 
+            Chasy poulet tikka masala jiji wiiiii hahaha po kass</p>
+        </div>
+        <div class="row">
+          <img src="img/placeholder.svg" alt="twitter">
+          <p><span class="blue">@Minions</span> - ipsum banana potatoooo uuuhhh. 
+            Chasy poulet tikka masala jiji wiiii hahaha</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Newsletter</h3>
+        <p>Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji 
+          wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! 
+          Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh</p>
+        <div class="row">
+          <input type="text" placeholder="Enter your Email...">
+          <input type="image" src="img/placeholder.svg">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
