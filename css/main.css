@@ -8,7 +8,7 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   BASE
    ========================================================================== */
 
 html {
@@ -83,12 +83,33 @@ textarea {
   resize: vertical;
 }
 
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #000;
+}
 /* ==========================================================================
-   Author's custom styles
+   LAYOUT
    ========================================================================== */
 
+
+
+
+
 /* ==========================================================================
-   Helper classes
+   MODULES
+   ========================================================================== */
+
+
+
+
+
+
+
+/* ==========================================================================
+   THEME
    ========================================================================== */
 
 /*
@@ -170,14 +191,38 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   MEDIA QUERIES
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   /* small only */
+@media screen and (max-width: 39.9375em) {
+  
 }
+
+/* medium and up */
+@media screen and (min-width: 40em) {
+
+}
+
+/* medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
+
+/* large and up */
+@media screen and (min-width: 64em) {
+
+}
+
+/* large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
