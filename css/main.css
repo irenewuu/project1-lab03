@@ -17,6 +17,7 @@ html {
   line-height: 1.4;
 }
 body {
+  /* margin: 0; */
   margin: 0 20px 0 20px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -388,15 +389,15 @@ hr {
 }
 
 /* medium and up */
-@media screen and (min-width: 40em) {
+/* @media screen and (min-width: 40em) {
   html {
     background-color: lightblue;
   }
 
-}
+} */
 
 /* medium only --tablet version*/
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40em) {
 
   html {
     background-color: rgb(179, 179, 231);
@@ -405,7 +406,12 @@ hr {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+  footer {
+    background-color: #16242f;
+    margin-left: -40px;
+    margin-right: -40px;  
+  }
+
   header > div > .menuBar, 
   header > div > .menubtn,
   .heroimg, 
@@ -425,15 +431,24 @@ hr {
   }
 
 /* hero image with the two side buttons  */
-  .leftBtn {
+  .heroimg {
     position: relative;
-    top: -175px;
+    /* margin-bottom: 50px; */
+  }
+
+  .intro {
+    margin-top: 50px;
+  }
+
+  .leftBtn {
+    position: absolute;
+    top: 1px;
     left: 25px;
   }
   .rightBtn {
-    position: relative;
-    top: -175px;
-    left: 85%;
+    position: absolute;
+    top: 1px;
+    right: 25px;
   }
   .heroimg > input {
     width: 30px;
@@ -512,16 +527,10 @@ hr {
     color: white;
   }
 
-  footer {
-    background-color: #16242f;
-    /* width: 100vw; */
-    margin: 0 -40px 0 -40px;
-    padding: 0;
-  }
   .footerSections > div {
     max-width: 300px;
     max-height: 300px;
-    margin: 60px;
+    /* margin: 60px; */
   }
 
   .profileSum > img {
@@ -553,13 +562,37 @@ hr {
     margin-top: 15px;
   }
 
-  .newsletter > div > input {
-    max-height: 25px;
+  .newsletter > div > .sendBtn {
+    /* max-height: 10px; */
+    margin: 0;
+    width: 100%;
+    height: 100%;
   }
 
+  .newsletter > div {
+    margin-top: 20px;
+  }
+
+  .emailInput {
+    padding: 7px;
+    width: 100%;
+    margin:0;
+    background-color: #de6262;
+    color: white;
+  }
+
+  .emailInput[placeholder="Enter your Email..."] {
+    color: white;
+  }
 
   hr {
     width: 35vw;
+  }
+
+  .bgDeco {
+    width: 50vw;
+    position: relative;
+    /* right: 0; */
   }
 /* ==============================
     layout
@@ -571,6 +604,9 @@ hr {
 
   .col-t-1-5 {
     grid-template-columns: 1fr 3fr;
+  }
+   .col-t-8-1 {
+    grid-template-columns: 8fr 1fr;
   }
   
   .col-t-1-6 {
@@ -589,10 +625,6 @@ hr {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* .col-4 {
-    grid-template-columns: repeat(4, 1fr);
-  } */
-
   .col-t-5 {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -610,17 +642,18 @@ hr {
 @media screen and (min-width: 64em) {
 
   html {
-    background-color: rgb(177, 230, 225);
+    background-color: rgb(220, 228, 241);
   }
+
 }
 
 /* large only --desktop version*/
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+/* @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
   html {
     background-color: lavender;
   }
-}
+} */
 
 
 
