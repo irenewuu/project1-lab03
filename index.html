@@ -26,10 +26,10 @@
 
 <body>
 <header>
-  <div class="row col-1-6-">
+  <div class="row col-t-1-6">
     <input type="image" src="img/metrolics-logo.svg" alt="Logo of Metrolics">
     <div class="menuBar column">
-      <div class="sub-row col-5">
+      <div class="sub-row col-t-5">
         <div class="menubtn column">
           <input type="image" src="img/placeholder.svg" alt="home button">
           <h5>Home</h5>
@@ -59,18 +59,13 @@
     <input class="rightBtn" type="image" src="img/placeholder.svg" alt="Right arrow button for hero image">
   </div>
 </header>
-<!-- Header Classes: menuBar, menubtn, heroimg -->
-<!-- Sect 1 Classes: column, row, col-1-5, sectionTitle, sectionSub, sectionContent, imgIcons...
-      Sect 2 Classes: row, imgBox, imgBotText
-      Sect 3 Classes: flex, row, imgBox, imgBotText
-      Sect 4 Classes: row, column-->
-<!-- Footer Classes: row, column, flex-->
   <h1>Hey guys! This is the <span>Metrolics</span> theme.<br>
       It sports a responsive layout with a mobile layout.</h1>
 
   <h1 class="sectionTitle">Things That We Do</h1>
   <p class="sectionSub">Ask us what we can do for you</p>
-  <section class="column"> <!--Things that we do section-->
+
+  <section class="row col-t-2"> <!--Things that we do section-->
     <div class="row col-1-5 sectionContent">
         <img src="img/placeholder.svg" alt="" class="column imgIcons">
         <div class="column">
@@ -111,7 +106,22 @@
 
   <h1 class="sectionTitle">What's Up Lately?</h1>
   <p class="sectionSub">Read up on our latest work</p>
-  <section class="row"> <!--What's Up Lately? section-->
+  <section class="row col-t-2"> <!--What's Up Lately? section-->
+    <figure class="imgBox">
+      <div class="dateBox">
+        <h4>29</h4>
+        <p>Nov 2013</p>
+      </div>
+      <img src="img/placeholder.svg" alt="sample image 1">
+      <figcaption class="row col-4-1">
+        <div class="column">
+          <h3>Sample Image Post</h3>
+          <p>Photography</p>
+        </div>
+        <input type="image" src="img/placeholder.svg" alt="camera" class="column">
+      </figcaption>
+    </figure>
+    
     <figure class="imgBox">
       <div class="dateBox">
         <h4>29</h4>
@@ -160,7 +170,7 @@
 
   <h1 class="sectionTitle">Our Lastest Projects</h1>
   <p class="sectionSub">Client happy? We are happy.</p>
-  <section class="row"> <!--Our Lastest Projects section-->
+  <section class="row col-t-2"> <!--Our Lastest Projects section-->
     <figure class="imgBox">
       <img src="img/placeholder.svg" alt="sample image 1">
       <figcaption class="row col-4-1">
@@ -230,63 +240,80 @@
 
   <div class="hidden"> <!--hidden in mobile version-->
     <h1 class="sectionTitle">Thingsofabove</h1>
-    <p>Misc stuff we could not put anyplace else</p>
+    <p class="sectionSub">Misc stuff we could not put anyplace else</p>
+
     <div class="row"> <!--Thingsofabove section-->
-      <div class="column">
-        <details>
+      <div class="column accordionSection">
+        <details class="accordionMenu">
           <summary>Sample Accordion Menu</summary>
-          <img src="img/placeholder.svg" alt="lightbulb">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
-            Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
-            Nullam a commodo nisl. Nullam sed elit dapilbus, euismod leo non, her drerit</p>
+          <div class="row col-t-1-7">
+            <img class="column" src="img/placeholder.svg" alt="lightbulb">
+            <div class="column">
+              <h4>Web Solutions</h4>
+              <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+                Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
+                Nullam a commodo nisl. Nullam sed elit dapilbus, euismod leo non, her drerit</p>
+            </div>
+          </div>
         </details>
 
-        <details>
+        <details class="accordionMenu">
           <summary>Sample Accordion Menu 2</summary>
-          <img src="img/placeholder.svg" alt="lightbulb">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
-            Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
-            Nullam a commodo nisl. Nullam sed elit dapilbus, euismod leo non, her drerit</p>
+          <div class="row col-t-1-7">
+            <img class="column" src="img/placeholder.svg" alt="lightbulb">
+            <div class="column">
+              <h4>Web Solutions</h4>
+              <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+                Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
+                Nullam a commodo nisl. Nullam sed elit dapilbus, euismod leo non, her drerit</p>
+            </div>
+          </div>
         </details>
-        
-        <details>
+
+        <details class="accordionMenu">
           <summary>Sample Accordion Menu 3</summary>
-          <img src="img/placeholder.svg" alt="lightbulb">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
-            Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
-            Nullam a commodo nisl. Nullam sed elit dapilbus, euismod leo non, her drerit</p>
+          <div class="row col-t-1-7">
+            <img class="column" src="img/placeholder.svg" alt="lightbulb">
+            <div class="column">
+              <h4>Web Solutions</h4>
+              <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+                Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
+                Nullam a commodo nisl. Nullam sed elit dapilbus, euismod leo non, her drerit</p>
+            </div>
+          </div>
         </details>
       </div>
 
-      <div class="column">
-        <div>
-          <img src="img/placeholder.svg" alt="icon">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+      <div class="column tabsSection"> <!--tabs section at end of body-->
+        <div class="tabs row col-t-1-7">
+          <img class="column" src="img/placeholder.svg" alt="icon">
+          <p class="column">Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
             Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
             Nullam a commodo nisl.</p>
         </div>
-        <div>
-          <img src="img/placeholder.svg" alt="icon">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+        <div class="tabs row col-t-1-7">
+          <img class="column" src="img/placeholder.svg" alt="icon">
+          <p class="column">Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
             Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
             Nullam a commodo nisl.</p>
         </div>
-        <div>
-          <img src="img/placeholder.svg" alt="icon">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+        <div class="tabs row col-t-1-7">
+          <img class="column" src="img/placeholder.svg" alt="icon">
+          <p class="column">Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
             Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
             Nullam a commodo nisl.</p>
         </div>
-        <div>
-          <img src="img/placeholder.svg" alt="icon">
-          <p>Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
+        <div class="tabs row col-t-1-7">
+          <img class="column" src="img/placeholder.svg" alt="icon">
+          <p class="column">Lorem ipsum dolor sit amet, sonsectetur adipiscing elit. 
             Sed quis lobortis arcu. Etiam tempus lacus quis cui dapibus bibendum. 
             Nullam a commodo nisl.</p>
         </div>
       </div>
+
     </div>
     
-      <div class="row">
+      <div class="row col-t-5 brandNames">
         <input type="image" src="img/placeholder.svg" alt="company 1">
         <input type="image" src="img/placeholder.svg" alt="company 2">
         <input type="image" src="img/placeholder.svg" alt="company 3">
@@ -314,7 +341,7 @@
         <p class="hidden">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. 
           Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahahaha 
           gelatooo belloo! Bananaaaa aaaaaah butt</p>
-        <div class="socialMedia">
+        <div class="socialMedia hidden">
           <input type="image" src="img/placeholder.svg" alt="facebook">
           <input type="image" src="img/placeholder.svg" alt="google">
           <input type="image" src="img/placeholder.svg" alt="twitter">
@@ -324,14 +351,14 @@
       </div>
     
       <div class="column hidden">
-        <h3>Flickr Photos</h3>
-        <div class="flex row">
-          <img src="img/placeholder.svg" alt="minion image 1">
-          <img src="img/placeholder.svg" alt="minion image 2">
-          <img src="img/placeholder.svg" alt="minion image 3">
-          <img src="img/placeholder.svg" alt="minion image 4">
-          <img src="img/placeholder.svg" alt="minion image 5">
-          <img src="img/placeholder.svg" alt="minion image 6">
+        <h3 class="hidden">Flickr Photos</h3>
+        <div class="flex row hidden">
+          <img class="hidden" src="img/placeholder.svg" alt="minion image 1">
+          <img class="hidden" src="img/placeholder.svg" alt="minion image 2">
+          <img class="hidden" src="img/placeholder.svg" alt="minion image 3">
+          <img class="hidden" src="img/placeholder.svg" alt="minion image 4">
+          <img class="hidden" src="img/placeholder.svg" alt="minion image 5">
+          <img class="hidden" src="img/placeholder.svg" alt="minion image 6">
         </div>
       </div>
 
@@ -354,9 +381,9 @@
         <p>Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji 
           wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! 
           Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh</p>
-        <div class="row">
-          <input type="text" placeholder="Enter your Email...">
-          <input type="image" src="img/placeholder.svg" alt="send button">
+        <div class="row hidden">
+          <input class="hidden" type="text" placeholder="Enter your Email...">
+          <input class="hidden" type="image" src="img/placeholder.svg" alt="send button">
         </div>
       </div>
     </div>

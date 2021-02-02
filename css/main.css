@@ -103,6 +103,7 @@ header > div > .menubtn,
 .hidden { /* banner and accordian+tabs section */
   display: none;
 }
+
 h1 {
   color: #000;
   margin: 0 50px 0 50px;
@@ -132,6 +133,7 @@ body > p, .column > p, h3 {
 
 .sectionSub {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .sectionContent {
@@ -299,10 +301,6 @@ hr {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -398,11 +396,16 @@ hr {
   html {
     background-color: rgb(179, 179, 231);
   }
+  body {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   
   header > div > .menuBar, 
   header > div > .menubtn,
   .heroimg, 
-  .hidden { /* banner and accordian+tabs section */
+  .hidden
+  { /* banner and accordian+tabs section, and some footer content */
     display: unset;
   }
 
@@ -416,6 +419,17 @@ hr {
     max-height: 300px;
   }
 
+/* hero image with the two side buttons  */
+  .leftBtn {
+    position: relative;
+    top: -175px;
+    left: 25px;
+  }
+  .rightBtn {
+    position: relative;
+    top: -175px;
+    left: 85%;
+  }
   .heroimg > input {
     width: 30px;
     height: 30px;
@@ -424,18 +438,103 @@ hr {
     border: 2px solid black;
   }
 
-  .col-1-5 {
-    grid-template-columns: 1fr 5fr;
+
+  .sectionContent {
+    text-align: center;
   }
   
-  .col-1-6- {
+  .imgIcons {
+    max-width: 115px;
+    max-height: 115px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .imgBox {
+    margin: 10px;
+  }
+
+  /* accordion menu near end of body */
+  .accordionSection {
+    margin-bottom: 30px;
+  }
+  .accordionMenu {
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  .accordionMenu > div > img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 30px;
+  }
+  .accordionMenu > div > div > h4 {
+    margin: 30px 0 0 0;
+  }
+  .accordionMenu > div > div > p {
+    margin-bottom: 20px;
+  }
+
+
+  /* tabs section at end of body */
+  .tabsSection {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .tabs > img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: 20px;
+  }
+
+  .brandNames {
+    margin: 30px 0 30px 0;
+  }
+
+  .brandNames > input {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 75px;
+    max-height: 75px;
+    margin: 0 auto;
+  }
+
+/* ==============================
+    layout
+    ============================= */
+
+  .col-t-1-5 {
+    grid-template-columns: 1fr 3fr;
+  }
+  
+  .col-t-1-6 {
     grid-template-columns: 1fr 6fr;
+  } 
+
+  .col-t-1-7 {
+    grid-template-columns: 1fr 7fr;
   }
-  
-  .col-5 {
+
+  .col-t-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+  /* .col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  } */
+
+  .col-t-5 {
     grid-template-columns: repeat(5, 1fr);
   }
 
+  .col-1-5 {
+    grid-template-columns: unset;
+  }
   .sub-row {
     display: grid;
   }
