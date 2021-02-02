@@ -16,6 +16,9 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+body {
+  margin: 0 20px 0 20px;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -87,14 +90,91 @@ img {
   width: 100%;
 }
 
+/* header */
+header > input {
+  width: 200px;
+  height: 50px;
+  padding: 20px 20px 20px 60px;
+}
+header > .menuBar, header > .heroimg {
+  display: none;
+}
 h1 {
   color: #000;
+  margin: 0 50px 0 50px;
 }
+
+/* top headline */
+h1 > span {
+  color: #1eafde;
+}
+
+h1, body > p {
+  text-align: center;
+}
+body > p, .column > p, h3 {
+  margin: 0;
+}
+
+/* sections */
+.imgIcons {
+  max-width: 75px;
+  max-height: 75px;
+  margin: 0 auto;
+}
+.sectionTitle {
+  margin-top: 50px;
+}
+
+.sectionSub {
+  margin-bottom: 25px;
+}
+
+.sectionContent {
+  padding-bottom: 25px;
+}
+
+
 /* ==========================================================================
    LAYOUT
    ========================================================================== */
 
+.column {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+}
 
+.row {
+  display: grid;
+  /* width: 85vw; */
+  /* min-width: 60rem;
+  max-width: 85rem; */
+  margin: 0;
+}
+
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.col-1-5 {
+  grid-template-columns: 1fr 5fr;
+}
+.sub-row {
+  display: grid;
+}
 
 
 
