@@ -11,6 +11,8 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content=""> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -55,7 +57,7 @@
 </header>
 
 <!-- Header Classes: menuBar, menubtn, heroimg -->
-<!-- Sect 1 Classes: row, colCentered 
+<!-- Sect 1 Classes: column, row, col-1-5, sectionTitle, sectionSub, sectionContent, imgIcons...
       Sect 2 Classes: row, imgBox, imgBotText
       Sect 3 Classes: flex, row, imgBox, imgBotText
       Sect 4 Classes: row, column-->
@@ -107,31 +109,52 @@
 
 
   <h1 class="sectionTitle">What's Up Lately?</h1>
-  <p>Read up on our latest work</p>
+  <p class="sectionSub">Read up on our latest work</p>
   <section class="row"> <!--What's Up Lately? section-->
-    <div class="imgBox">
+    <figure class="imgBox">
+      <div class="dateBox">
+        <h4>29</h4>
+        <p>Nov 2013</p>
+      </div>
       <img src="img/placeholder.svg" alt="sample image 1">
-      <div class="imgBotText">
-        <h3>Sample Image Post</h3>
-        <p>Photography</p>
-      </div>
-    </div>
+      <figcaption class="row col-4-1">
+        <div class="column">
+          <h3>Sample Image Post</h3>
+          <p>Photography</p>
+        </div>
+        <input type="image" src="img/placeholder.svg" alt="camera" class="column">
+      </figcaption>
+    </figure>
     
-    <div class="imgBox">
-      <img src="img/placeholder.svg" alt="sample image 2">
-      <div class="imgBotText">
-        <h3>Sample Image Post</h3>
-        <p>Photography</p>
+    <figure class="imgBox">
+      <div class="dateBox">
+        <h4>29</h4>
+        <p>Nov 2013</p>
       </div>
-    </div>
+      <img src="img/placeholder.svg" alt="sample image 1">
+      <figcaption class="row col-4-1">
+        <div class="column">
+          <h3>Sample Image Post</h3>
+          <p>Photography</p>
+        </div>
+        <input type="image" src="img/placeholder.svg" alt="camera" class="column">
+      </figcaption>
+    </figure>
     
-    <div class="imgBox">
-      <img src="img/placeholder.svg" alt="sample image 3">
-      <div class="imgBotText">
-        <h3>Sample Image Post</h3>
-        <p>Photography</p>
+    <figure class="imgBox">
+      <div class="dateBox">
+        <h4>29</h4>
+        <p>Nov 2013</p>
       </div>
-    </div>
+      <img src="img/placeholder.svg" alt="sample image 1">
+      <figcaption class="row col-4-1">
+        <div class="column">
+          <h3>Sample Image Post</h3>
+          <p>Photography</p>
+        </div>
+        <input type="image" src="img/placeholder.svg" alt="camera" class="column">
+      </figcaption>
+    </figure>
   </section>
 
   <h1 class="sectionTitle">Our Lastest Projects</h1>
