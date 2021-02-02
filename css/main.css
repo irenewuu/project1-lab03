@@ -99,9 +99,10 @@ header > div > input { /* mertolics logo */
 }
 header > div > .menuBar, 
 header > div > .menubtn,
+footer > div > .hidden,
 .heroimg, 
-.hidden { /* banner and accordian+tabs section */
-  display: none;
+.hiddenn { /* banner and accordian+tabs section */
+  display: none !important;
 }
 
 h1 {
@@ -198,6 +199,7 @@ footer {
   max-width: 150px;
   max-height: 150px;
   border-radius: 300px;
+  margin-top: 20px;
 }
 
 .description {
@@ -218,17 +220,17 @@ footer {
 
 .twitter > h3, 
 .twitter > hr {
-  margin: 0 30px 0 30px;
+  margin: 0 30px 10px 30px;
 }
 
 .tweets > img {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 35px;
+  max-height: 35px;
   border-radius: 100px;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-right: 0px;
 }
-.tweets > p,
+.tweets > div >p,
 .twitter > h3 {
   color: white;
 }
@@ -243,6 +245,9 @@ footer {
 hr {
   width: 60vw;
   margin: 5px 0 10px 0;
+}
+.unhide {
+  display: inline;
 }
 
 /* ==========================================================================
@@ -404,9 +409,9 @@ hr {
   header > div > .menuBar, 
   header > div > .menubtn,
   .heroimg, 
-  .hidden
+  .hiddenn
   { /* banner and accordian+tabs section, and some footer content */
-    display: unset;
+    display: unset !important;
   }
 
   .menubtn > input {
@@ -500,9 +505,69 @@ hr {
     margin: 0 auto;
   }
 
+  /* footer */
+  footer > div > div > h3,
+  footer > div > div > p 
+  {
+    color: white;
+  }
+
+  footer {
+    background-color: #16242f;
+    /* width: 100vw; */
+    margin: 0 -40px 0 -40px;
+    padding: 0;
+  }
+  .footerSections > div {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 60px;
+  }
+
+  .profileSum > img {
+    max-width: 75px;
+    max-height: 75px;
+    margin: 30px 0 0 30px;
+  }
+  .profileSum > div > p {
+    margin-bottom: 10px;
+  }
+
+  .socialMedia {
+    margin: 0;
+  }
+  .socialMedia > input {
+    max-width: 40px;
+    max-height: 40px;
+    /* margin: 0; */
+  }
+
+  .twitter > h3,
+  .twitter > hr {
+    margin: 0;
+  }
+
+  .flickrPhotos > div > img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 15px;
+  }
+
+  .newsletter > div > input {
+    max-height: 25px;
+  }
+
+
+  hr {
+    width: 35vw;
+  }
 /* ==============================
     layout
     ============================= */
+
+  .col-2 {
+    grid-template-columns: 1fr 7fr;
+  }
 
   .col-t-1-5 {
     grid-template-columns: 1fr 3fr;
@@ -520,9 +585,9 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .col-3 {
+  .col-t-3 {
     grid-template-columns: repeat(3, 1fr);
-  } */
+  }
 
   /* .col-4 {
     grid-template-columns: repeat(4, 1fr);
