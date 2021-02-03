@@ -546,14 +546,15 @@ hr {
     margin: 0;
   }
   .socialMedia > input {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 30px;
+    max-height: 30px;
     /* margin: 0; */
   }
 
   .twitter > h3,
   .twitter > hr {
     margin: 0;
+    padding: 0;
   }
 
   .flickrPhotos > div > img {
@@ -645,17 +646,125 @@ hr {
     background-color: rgb(220, 228, 241);
   }
 
+  body {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  footer {
+    margin-left: -200px;
+    margin-right: -200px;
+  }
+
+  .d-hidden {
+    display: none;
+  }
+
+  .brandNames {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .brandNames > input {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 75px;
+    max-height: 75px;
+    margin: 0 auto;
+  }
+
+  .profileSum {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .footerSections {
+    margin: 0 200px 0 200px;
+  }
+
+  .twitter > hr {
+    margin-top: -10px;
+  }
+  hr {
+    width: 17vw;
+  }
+
+
+  .bgDeco {
+    width: 30vw;
+    position: relative;
+    /* right: 0; */
+  }
+/* ==============================
+    layout
+    ============================= */
+
+  .col-d-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-d-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-d-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* large only --desktop version*/
-/* @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
   html {
     background-color: lavender;
   }
-} */
+  
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
 
+ 
+  .brandNames > input {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 75px;
+    max-height: 75px;
+    margin: 0 auto;
+  }
+  .profileSum {
+    /* margin-left: 100px; */
+    margin-right: 100px;
+  }
+
+  .footerSections > div {
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .twitter > hr {
+    margin-top: -10px;
+  }
+
+  hr{
+    width: 30vw;
+  }
+
+
+/* ==============================
+    layout
+    ============================= */
+
+  .col-dt-1-5 {
+    grid-template-columns: 1fr, 5fr;
+  }
+  .col-dt-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
 
 
 
