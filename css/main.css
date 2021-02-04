@@ -187,7 +187,6 @@ body > p, .column > p, h3 {
 /* footer */
 footer {
   background-color: #16242f;
-  /* width: 100vw; */
   margin: 0 -20px 0 -20px;
   padding: 0;
 }
@@ -264,9 +263,6 @@ hr {
 
 .row {
   display: grid;
-  /* width: 85vw; */
-  /* min-width: 60rem;
-  max-width: 85rem; */
   margin: 0;
 }
 
@@ -382,11 +378,11 @@ hr {
    ========================================================================== */
 
    /* small only --mobile version */
-@media screen and (max-width: 39.9375em) {
+/* @media screen and (max-width: 39.9375em) {
   html {
     background-color: lavender;
   }
-}
+} */
 
 /* medium and up */
 /* @media screen and (min-width: 40em) {
@@ -399,9 +395,9 @@ hr {
 /* medium only --tablet version*/
 @media screen and (min-width: 40em) {
 
-  html {
+  /* html {
     background-color: rgb(179, 179, 231);
-  }
+  } */
   body {
     margin-left: 40px;
     margin-right: 40px;
@@ -426,14 +422,12 @@ hr {
   }
 
   .heroimg > img {
-    /* width: 90%; */
     max-height: 300px;
   }
 
 /* hero image with the two side buttons  */
   .heroimg {
     position: relative;
-    /* margin-bottom: 50px; */
   }
 
   .intro {
@@ -477,6 +471,7 @@ hr {
   /* accordion menu near end of body */
   .accordionSection {
     margin-bottom: 30px;
+    border: 1px solid rgb(165, 165, 165);
   }
   .accordionMenu {
     background-color: white;
@@ -501,6 +496,7 @@ hr {
     background-color: white;
     margin: 0 auto;
     padding: 20px;
+    border: 1px solid rgb(165, 165, 165);
   }
   .tabs > img {
     max-width: 40px;
@@ -530,7 +526,6 @@ hr {
   .footerSections > div {
     max-width: 300px;
     max-height: 300px;
-    /* margin: 60px; */
   }
 
   .profileSum > img {
@@ -548,7 +543,6 @@ hr {
   .socialMedia > input {
     max-width: 30px;
     max-height: 30px;
-    /* margin: 0; */
   }
 
   .twitter > h3,
@@ -564,7 +558,6 @@ hr {
   }
 
   .newsletter > div > .sendBtn {
-    /* max-height: 10px; */
     margin: 0;
     width: 100%;
     height: 100%;
@@ -593,8 +586,8 @@ hr {
   .bgDeco {
     width: 50vw;
     position: relative;
-    /* right: 0; */
   }
+
 /* ==============================
     layout
     ============================= */
@@ -642,9 +635,9 @@ hr {
 /* large and up */
 @media screen and (min-width: 64em) {
 
-  html {
+  /* html {
     background-color: rgb(220, 228, 241);
-  }
+  } */
 
   body {
     margin-left: 200px;
@@ -689,12 +682,11 @@ hr {
     width: 17vw;
   }
 
-
   .bgDeco {
     width: 30vw;
     position: relative;
-    /* right: 0; */
   }
+
 /* ==============================
     layout
     ============================= */
@@ -715,9 +707,9 @@ hr {
 /* large only --desktop version*/
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
-  html {
+  /* html {
     background-color: lavender;
-  }
+  } */
   
   body {
     margin-left: 100px;
@@ -734,7 +726,6 @@ hr {
     margin: 0 auto;
   }
   .profileSum {
-    /* margin-left: 100px; */
     margin-right: 100px;
   }
 
